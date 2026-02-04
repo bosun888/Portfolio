@@ -3,79 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Web Studio</title>
+    <title>Esay Web Studio | Premium Web Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Easy Web Studio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <nav>
+        <div class="logo">Esay Web Studio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Crafting Digital Excellence</h1>
+        <p>Modern web design and development tailored to your brand.</p>
+        <a href="#contact" class="btn">Start a Project</a>
     </header>
 
-    <section class="hero">
-        <h2>We Build Beautiful Websites</h2>
-        <p>Professional web development services, creative design, and digital solutions to make your business shine online.</p>
-        <a href="#contact" class="btn">Get in Touch</a>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Easy Web Studio is a creative web development agency specializing in building modern, responsive, and user-friendly websites. We combine innovation with technology to deliver amazing digital experiences for your brand.</p>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-card">
-            <h3>Web Development</h3>
-            <p>Responsive and high-performance websites tailored to your needs.</p>
-        </div>
-        <div class="service-card">
-            <h3>UI/UX Design</h3>
-            <p>Creative and user-friendly designs to enhance user experience.</p>
-        </div>
-        <div class="service-card">
-            <h3>SEO & Marketing</h3>
-            <p>Boost your online presence and attract more customers.</p>
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-container">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Clean, scalable code built with the latest frameworks.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Intuitive interfaces designed for the best user experience.</p>
+            </div>
         </div>
     </section>
-
-    <section id="projects" class="projects">
-        <h2>Our Projects</h2>
+   <section id="portfolio">
+    <h2 class="section-title">Our Recent Projects</h2>
+    <div class="portfolio-grid">
         <div class="project-card">
-            <img src="https://via.placeholder.com/400x250" alt="Project 1">
-            <h4>Project 1</h4>
+            <div class="project-image">
+                <img src="e-commerce web project.jpg" alt="E-commerce Project">
+                <div class="overlay">
+                    <a href="#" class="view-btn">View Live</a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Luxe E-commerce</h3>
+                <p>A full-stack online store with secure payments.</p>
+                <span class="tag">React / Node.js</span>
+            </div>
         </div>
-        <div class="project-card">
-            <img src="https://via.placeholder.com/400x250" alt="Project 2">
-            <h4>Project 2</h4>
-        </div>
-        <div class="project-card">
-            <img src="https://via.placeholder.com/400x250" alt="Project 3">
-            <h4>Project 3</h4>
-        </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p style="text-align:center; margin-top:20px;">
-            <a href="EasyWebStudioCV.pdf" class="btn" download>Download CV</a>
-        </p>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="skyline.jpg" alt="Real Estate Project">
+                <div class="overlay">
+                    <a href="#" class="view-btn">View Live</a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Skyline Realty</h3>
+                <p>Dynamic property listing site with map integration.</p>
+                <span class="tag">UI/UX / Next.js</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="fitness.jpg" alt="Fitness App">
+                <div class="overlay">
+                    <a href="#" class="view-btn">View Live</a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Pulse Fitness</h3>
+                <p>Custom training dashboard for fitness coaches.</p>
+                <span class="tag">JavaScript / CSS3</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <div class="contact-box">
+            <h2>Get In Touch</h2>
+            <form action="https://formspree.io/f/mgolweye" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Project Details" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Email</button>
+            </form>
+
+            <div class="whatsapp-wrapper">
+                <p>Or chat with us instantly:</p>
+                <a href="https://wa.me/message/IOWJ3YVI7D4JI1" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                </a>
+            </div>
+        </div>
     </section>
+    <div id="form-status" style="display:none; padding: 20px; background: #22c55e; color: white; border-radius: 8px; margin-bottom: 20px;">
+    Thanks! Your message has been sent successfully.
+</div>
 
     <footer>
-        &copy; 2026 Easy Web Studio. All Rights Reserved.
+        <p>&copy; 2026 Esay Web Studio. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

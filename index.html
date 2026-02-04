@@ -1,151 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <meta name="description" content="James - Web Developer & Cybersecurity Enthusiast. I build fast, secure and modern websites for businesses." />
-
-  <title>James | Web Developer & Cybersecurity</title>
-
-  <link rel="stylesheet" href="style.css" />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Web Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>Easy Web Studio</h1>
+    <header>
+        <h1>Easy Web Studio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="contact.html">Contact</a>
+    <section class="hero">
+        <h2>We Build Beautiful Websites</h2>
+        <p>Professional web development services, creative design, and digital solutions to make your business shine online.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
 
-    <!-- NEW -->
-    <a href="assets/James-CV.pdf" download class="cv-btn">Download CV</a>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Easy Web Studio is a creative web development agency specializing in building modern, responsive, and user-friendly websites. We combine innovation with technology to deliver amazing digital experiences for your brand.</p>
+    </section>
 
-    <button id="themeToggle" class="theme-btn">🌙</button>
-  </nav>
-</header>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Responsive and high-performance websites tailored to your needs.</p>
+        </div>
+        <div class="service-card">
+            <h3>UI/UX Design</h3>
+            <p>Creative and user-friendly designs to enhance user experience.</p>
+        </div>
+        <div class="service-card">
+            <h3>SEO & Marketing</h3>
+            <p>Boost your online presence and attract more customers.</p>
+        </div>
+    </section>
 
+    <section id="projects" class="projects">
+        <h2>Our Projects</h2>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x250" alt="Project 1">
+            <h4>Project 1</h4>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x250" alt="Project 2">
+            <h4>Project 2</h4>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x250" alt="Project 3">
+            <h4>Project 3</h4>
+        </div>
+    </section>
 
-<!-- HERO -->
-<section class="hero reveal">
-  <div>
-    <h2>Hello, I'm <span>James</span></h2>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="text-align:center; margin-top:20px;">
+            <a href="EasyWebStudioCV.pdf" class="btn" download>Download CV</a>
+        </p>
+    </section>
 
-    <p>
-      Frontend Developer • Backend Beginner • Cybersecurity Learner  
-      I build fast, secure and modern web apps.
-    </p>
+    <footer>
+        &copy; 2026 Easy Web Studio. All Rights Reserved.
+    </footer>
 
-    <div class="hero-btns">
-      <a href="contact.html" class="btn">Hire Me</a>
-      <a href="#projects" class="btn outline">View Projects</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ABOUT -->
-<section id="about" class="reveal">
-  <h3>About Me</h3>
-  <p>
-    I'm a passionate developer from Nigeria focused on building professional,
-    responsive and secure applications. I combine frontend design, backend logic
-    and cybersecurity knowledge to create reliable digital solutions.
-  </p>
-</section>
-
-
-<!-- SKILLS -->
-<section id="skills" class="reveal">
-  <h3>Skills</h3>
-
-  <div class="skills">
-    <span>HTML,</span>
-    <span>CSS,</span>
-    <span>JavaScript,</span>
-    <span>React,</span>
-    <span>Node.js,</span>
-    <span>Express,</span>
-    <span>MongoDB,</span>
-    <span>Cybersecurity Basics.</span>
-  </div>
-</section>
-
-
-<!-- SERVICES -->
-<section id="services" class="reveal">
-  <h3>Services</h3>
-
-  <div class="grid">
-    <div class="card">Website Development</div>
-    <div class="card">Backend APIs</div>
-    <div class="card">Bug Fixing</div>
-    <div class="card">Security Setup</div>
-  </div>
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects" class="reveal">
-  <h2>Projects</h2>
-
-  <div class="grid">
-
-    <div class="card project-card">
-      <img src="assets/project1.png" alt="">
-      <h3>Business Website</h3>
-      <p>Modern responsive business website.</p>
-      <small>HTML • CSS • JS</small><br>
-      <a href="#" class="btn">Live</a>
-      <a href="#" class="btn outline">GitHub</a>
-    </div>
-
-    <div class="card project-card">
-      <img src="assets/project2.png" alt="">
-      <h3>E-commerce Store</h3>
-      <p>Cart + payment + dashboard.</p>
-      <small>React • Node • MongoDB</small><br>
-      <a href="#" class="btn">Live</a>
-      <a href="#" class="btn outline">GitHub</a>
-    </div>
-
-    <div class="card project-card">
-      <img src="assets/project3.png" alt="">
-      <h3>Secure Login API</h3>
-      <p>JWT authentication system.</p>
-      <small>Node • Express • Security</small><br>
-      <a href="#" class="btn">Live</a>
-      <a href="#" class="btn outline">GitHub</a>
-    </div>
-
-  </div>
-</section>
-<script>
-  document.body.addEventListener("click", function(e) {
-    // prevent clicks on links and buttons from redirecting
-    if (e.target.tagName !== "A" && e.target.tagName !== "BUTTON" && e.target.tagName !== "INPUT" && e.target.tagName !== "TEXTAREA") {
-      window.open("https://example.com", "_blank"); // opens in new tab
-    }
-  });
-</script>
-
-
-
-<footer>
-  © 2026 Easy Web Studio | Built by James
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
